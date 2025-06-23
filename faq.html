@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Forms Portal - FAQ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      position: relative;
+      padding: 20px 15px;
+      background-color: #414042;
+      color: white;
+      text-align: center;
+    }
+
+    header img {
+      height: 55px;
+    }
+
+    header a {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+    }
+
+    .faq-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 15px;
+      flex: 1;
+    }
+
+
+
+    .faq-section h2 {
+       text-align: center;
+    }
+
+    details {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px 15px;
+      background-color: #f9f9f9;
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1.05em;
+      cursor: pointer;
+    }
+
+    .faq-section > details > summary::marker {
+      content: "➕ ";
+    }
+
+    .faq-section > details[open] > summary::marker {
+      content: "➖ ";
+    }
+
+    .faq-section details details > summary::marker {
+      content: "➕ ";
+    }
+
+    .faq-section details details[open] > summary::marker {
+      content: "➖ ";
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #414042;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 10px;
+      }
+
+      header a {
+        position: static;
+        display: block;
+        transform: none;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      header img {
+        height: 45px;
+      }
+
+      header div h1 {
+        font-size: 1.5em;
+      }
+
+      .faq-section {
+        padding: 15px 10px;
+      }
+
+      footer {
+        font-size: 0.85em;
+        padding: 15px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://positive.tech">
+    <img src="https://positive.tech/wp-content/uploads/2021/01/positive-tech-solutions.png" alt="Positive Tech Solutions Logo">
+  </a>
+  <div>
+    <h1 style="margin: 0 0 10px;">Positive Forms Portal - FAQ</h1>
+    <p style="font-size: 1.2em; margin: 0;">Fast, Automated, and Secure IT Requests</p>
+  </div>
+</header>
+
+<div class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>✅ What's the benefit of using the forms?</summary>
+    <ul>
+      <li>By submitting a form instead of sending a ticket, your ticket will be handled by automation resulting in it being completed within minutes!</li>
+      <li>The form will also make sure to collect all needed information from you and prevent the back-and-forth between you and a technician.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🛂 Do my form submissions need approval?</summary>
+    <ul>
+      <li>Depending on your permissions, your request might need approval after it's submitted.</li>
+      <li>If the request needs approval, it will automatically send an approval request to your manager and the automation will automatically continue once it's approved.</li>
+      <li>If the request is pending for approval longer than 8 hours, it will alert us and we will manually reach out to you and your manager to get it approved.</li>
+    </ul>
+  </details>
+
+    <details>
+    <summary>📝 What forms are available, and when should they be used?</summary>
+
+    <details>
+        <summary>Group Membership Form</summary>
+        <ul>
+        <li>Use this form when someone needs to be added to or removed from an email group.</li>
+        <li>For example, if a user moves to a new team or position.</li>
+        <li>You’ll be able to choose specific groups and whether to add or remove the user.</li>
+        <li>Supports bulk changes for multiple users.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Mailbox Permissions Form</summary>
+        <ul>
+        <li>Use this form to give or remove a user's access to another user’s mailbox.</li>
+        <li>For example, if a user is out for a few days and someone is covering for them, or a manager wants to see an employee's emails.</li>
+        <li>Choose viewing rights or ability to send emails on their behalf.</li>
+        <li>Control whether their emails appears in Outlook or only when logging in online.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Manage Auto Reply</summary>
+        <ul>
+        <li>Set or disable automatic email replies for a user (e.g., Out of Office).</li>
+        <li>This is useful if someone is on vacation, out sick, etc.</li>
+        <li>Specify the message, and optional start and end dates, or turn off an existing auto-reply as needed.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>New User Onboarding</summary>
+        <ul>
+        <li>Submit this form when hiring a new employee and their account and tools need to be set up.</li>
+        <li>This includes email access, computer login, phone setup, and any other essentials.</li>
+        <li>You’ll be able to provide all the needed info, like start date, department, manager, and more so everything is ready for their first day.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>User Termination Form</summary>
+        <ul>
+        <li>Use when someone leaves the company to remove access securely.</li>
+        <li>This ensures their email, computer, and other accounts are properly shut down and secured.</li>
+        <li>Options also include forwarding their emails, setting auto-replies, giving mailbox access to others, and more.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Other Forms</summary>
+        <ul>
+        <li>Additional forms may be available depending on your company’s needs.</li>
+        </ul>
+    </details>
+
+    </details>
+
+  <details>
+    <summary>📩 Does submitting a form create a ticket?</summary>
+    <ul>
+      <li>Yes, it will still create a ticket under your name. If automation fails, we’ll handle it manually like any other ticket.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🕒 The dropdowns are loading slowly</summary>
+    <ul>
+      <li>Dropdowns pull live data from various systems, which might take time on first use or after long inactivity.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🔄 The dropdown is missing options</summary>
+    <ul>
+      <li>Click the refresh button next to the dropdown to reload the data. It may take a minute to update.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🌐 Where do I find the forms?</summary>
+    <ul>
+      <li>The forms are available at <a href="https://forms.positive.tech" target="_blank" rel="noopener noreferrer">forms.positive.tech</a>.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🔐 How do I log in?</summary>
+    <ul>
+      <li>Click on "Sign in with Microsoft" and log in with your email address and password.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>⚠️ Error: Not Authorized - User not found</summary>
+    <ul>
+      <li>This usually means your account isn’t active or lacks permissions. Contact us at <a href="mailto:support@positive.tech" target="_blank" rel="noopener noreferrer">support@positive.tech</a>.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>⚠️ Error: Live Page Query Error - Not Authorized</summary>
+    <ul>
+      <li>You don’t have access to that form. If you believe you should, contact us at <a href="mailto:support@positive.tech" target="_blank" rel="noopener noreferrer">support@positive.tech</a>.</li>
+    </ul>
+  </details>
+</div>
+
+<footer>
+  <p style="margin: 0;">&copy; <script>document.write(new Date().getFullYear())</script> Positive Tech Solutions. All rights reserved.</p>
+  <p style="margin: 5px 0;">Need help? Contact us at <a href="mailto:support@positive.tech">support@positive.tech</a></p>
+  <p style="margin: 0;"><a href="https://positive.tech" target="_blank" rel="noopener noreferrer">Visit our website</a></p>
+</footer>
+
+</body>
+</html>
